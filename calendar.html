@@ -95,11 +95,11 @@ td:nth-child(even)>span {
 }
 td:last-child>span,
 td:nth-child(6)>span {
-    color: #9b59b6;
+    color: #B29DC3;
 }
 td.avui>span {
     font-weight: bold;
-    background-color: #9b59b6;
+    background-color: #B29DC3;
     color: #fff;
     border: 2px solid rgba(0,0,0,0.1);
 }
@@ -107,7 +107,7 @@ td.fora > span {
     opacity: 0.2;
 }
 td > span:hover {
-    background: #a57cb6;
+    background: #D9CEE1;
     color: #fff;
 }
 .boto-next, .boto-prev {
@@ -158,38 +158,38 @@ footer a:link {
       </div>
       <script>
         var mesos = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'Desember'
+    'janeiro',
+    'fevereiro',
+    'março',
+    'abril',
+    'maio',
+    'junho',
+    'julho',
+    'agosto',
+    'setembro',
+    'outubro',
+    'novembro',
+    'dezembro'
 ];
 
 var dies = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wedensday',
-    'Thursday',
-    'Friday',
-    'Saturday'
+    'domingo',
+    'segunda',
+    'terça',
+    'quarta',
+    'quinta',
+    'sexta',
+    'sábado'
 ];
 
 var dies_abr = [
-    'Su',
-    'Mo',
-    'Tu',
-    'We',
-    'Th',
-    'Fr',
-    'Sa'
+    'D',
+    'S',
+    'T',
+    'Q',
+    'Q',
+    'S',
+    'S'
 ];
 
 Number.prototype.pad = function(num) {
@@ -263,7 +263,7 @@ function calendari(widget, data)
 
     fila = document.createElement('tr');
 
-    for(var i = 1; i < 7; i++)
+    for(var i = 0; i < 7; i++)
     {
         fila.innerHTML += '<th>' + dies_abr[i] + '</th>';
     }
