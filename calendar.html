@@ -286,7 +286,7 @@ function calendari(widget, data)
     {
         var fila = document.createElement('tr');
 
-        for(var d = 1; d < 8; d++)
+        for(var d = 1; d < 6; d++)
         {
 	    var cela = document.createElement('td');
 	    var span = document.createElement('span');
@@ -301,7 +301,7 @@ function calendari(widget, data)
             /* Si es avui el decorem */
             if(data.getDate() == actual.getDate() &&
 	       data.getMonth() == actual.getMonth())
-		cela.className = 'avui';
+		mmcela.className = 'avui';
 
 	    actual.setDate(actual.getDate()+1);
             fila.appendChild(cela);
